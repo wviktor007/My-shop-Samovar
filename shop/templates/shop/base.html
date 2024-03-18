@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="header">
-      <a href="/" class="logo">My shop</a>
+      <a href="/" class="logo">Сэмовар</a>
     </div>
     <div id="subheader">
       <div class="cart">
@@ -19,7 +19,7 @@
             {{ cart.get_total_price }}₸
             </a>
             {% elif not order %}
-            Your cart is empty.
+            В корзине нет товаров.
             {% endif %}
             {% endwith %}
       </div>

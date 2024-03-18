@@ -131,3 +131,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Настроечные параметры Stripe
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51Ovb1NH6zin3SYhjmZq6CHY1T8qund2gZq42kRI4jj8hrLPUFLybJgmj9JQ5ZfKy817w9HjUCjBG2KzcoCdZ4moK00wYlCItrE' # Публикуемый ключ
+STRIPE_SECRET_KEY = 'sk_test_51Ovb1NH6zin3SYhjDVG4i0NnTQ97lNlWKBB2p2EmSlobpE5Q9y6hrBwSwX6aNYBtWT43vshzBT3tqwmVrYUXRILQ00r1nHbVNe'
+# Секретный ключ
+STRIPE_API_VERSION = '2023-10-16'
