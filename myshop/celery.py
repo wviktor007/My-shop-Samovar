@@ -5,7 +5,7 @@ from celery import Celery
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myshop.settings')
 # broker = "amqp://admin:111@http:5672/"
-app = Celery('myshop', broker='amqp://guest:guest@hostname:5672//')#создается экземпляр приложения
+app = Celery('myshop', broker='amqp://guest:guest@172.25.224.1:5672//')#создается экземпляр приложения
 app.config_from_object('django.conf:settings', namespace='CELERY')#загружается любая конкретно прикладная конфигурация из настроек проекта
 app.autodiscover_tasks()
 

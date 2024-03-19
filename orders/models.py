@@ -34,7 +34,7 @@ class OrderItem(models.Model):
     '''
     Здесь храним товар, количество и цену оплаченного товара
     '''
-    order = models.ForeignKey(Order, related_name='item', on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
     product = models.ForeignKey(Product, related_name='order_items', on_delete=models.CASCADE)
     price = models.IntegerField()
     quantity = models.PositiveIntegerField(default=1)

@@ -3,15 +3,6 @@ from django.conf import settings
 from shop.models import Product
 
 class Cart:
-    # def __init__(self, request):
-    #     ''''
-    #     Инициализировать корзину.
-    #     '''
-    #     self.session = request.session
-    #     self.cart = self.session.get(settings.CART_SESSION_ID, {})  # Инициализация корзины
-    #     if not self.cart:
-    #         self.session[settings.CART_SESSION_ID] = {}  # Создание пустой корзины в сессии
-
     def __init__(self, request):
         """
         Инициализировать корзину.
